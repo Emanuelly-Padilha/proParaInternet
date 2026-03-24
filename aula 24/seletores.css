@@ -1,0 +1,60 @@
+body
+
+/* Passo 1  */
+/* Representa tudo o que aparece na página */
+    {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+
+}
+
+#topo-principal {
+    /* Passo 2 */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+
+}
+
+.card {
+    /* Passo 3 */
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+}
+
+p span {
+    /* Passo 4 */
+    font-weight: bold;
+    color: blue;
+
+}
+
+h1,
+h2 {
+    /* Passo 5 */
+    color: #2c3e50;
+
+
+}
+
+.card.destque {
+    /* Passo 6 */
+    border: 3px solid gold;
+    transform: scale(1.05);
+
+}
+
+button:hover {
+    /* Passo 7 */
+    background-color: #27ae60;
+
+    cursor: pointer;
+
+}
+
+nav ul li:nth-child(2) {
+    /* Passo 8 */
+    text-transform: uppercase;
+
+}
