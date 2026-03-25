@@ -1,60 +1,68 @@
-body
-
-/* Passo 1  */
-/* Representa tudo o que aparece na página */
-    {
-    background-color: #f4f4f4;
+/* Configurações Gerais */
+body {
+    background-color: #b2b0e8;
     font-family: Arial, sans-serif;
-
+    margin: 0;
 }
 
+/* Topo e Menu */
 #topo-principal {
-    /* Passo 2 */
-    background-color: #333;
-    color: white;
+    background-color: #C5B0CD; /* Cor que você pediu */
     padding: 20px;
+}
 
+#topo-principal h1 {
+    color: black; /* "Amigo Pet" em preto */
+    margin: 0 0 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0;
+    margin: 0;
+    display: flex;    /* Coloca Home, Adotar... lado a lado */
+    gap: 20px;        /* Espaço entre eles */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;     /* Links em preto */
+    font-weight: bold;
+}
+
+/* Container dos Cards (Lado a Lado) */
+.lista-animais {
+    display: flex;    /* Coloca as caixinhas lado a lado */
+    flex-wrap: wrap;  /* Se a tela for pequena, elas pulam linha */
+    gap: 20px;        /* Espaço entre as caixinhas */
+    padding: 20px;
 }
 
 .card {
-    /* Passo 3 */
     background-color: white;
     border-radius: 10px;
     width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
 }
 
+/* Outros Estilos */
 p span {
-    /* Passo 4 */
     font-weight: bold;
     color: blue;
-
 }
 
-h1,
 h2 {
-    /* Passo 5 */
     color: #2c3e50;
-
-
+    margin-top: 0;
 }
 
-.card.destque {
-    /* Passo 6 */
+.card.destaque {
     border: 3px solid gold;
     transform: scale(1.05);
-
 }
 
 button:hover {
-    /* Passo 7 */
     background-color: #27ae60;
-
     cursor: pointer;
-
-}
-
-nav ul li:nth-child(2) {
-    /* Passo 8 */
-    text-transform: uppercase;
-
 }
