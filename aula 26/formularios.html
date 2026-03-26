@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <h1> Tipos de Inputs HML5</h1>
+        <fieldset>
+            <legend>Identificação de Acesso</legend>
+            <div class="row">
+
+            </div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="" placeholder="Nome Completo" required>
+            <div>
+                <div class="campo">
+                    <label for="senha" Senha(password)></label>
+                    <input type="password" name="senha" id=" " required>
+                </div>
+                <div Class="Campo">
+                    <label for="email"> E-mail (email)</label>
+                    <input type="email" name=" email" id="" placeholder="seu@email=" seu@email.com.br>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> Dados Quantitativos</legend>
+            <div class="row">
+            </div class="campo">
+            <label for="idade"> Idade(number)</label>
+            <input type="number" name="idade" id="" min="18" max="100" value="18">
+            <div>
+            </div class="campo">
+            <label for="volume"> Volume(range)</label>
+            <input type="range" name="volume" id="" min="18" max="100">
+            </div>
+            </div class="campo">
+            <label for="cor"> Tema de Cor (color)</label>
+            <input type="color" name="cor_tema " id="" value="#3498db">
+            </div>
+
+
+        </fieldset>
+
+         <fieldset>
+    <legend>Agendamentos</legend>
+
+    <div class="campo">
+        <label for="data">Data do Agendamento</label>
+        <input type="date" name="data_agendamento" id="data">
+    </div>
+
+    <div class="campo">
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+    </div>
+
+    <div class="campo">
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana">
+    </div>
+
+    <div class="campo">
+        <label for="volume">Volume</label>
+        <input type="range" name="volume" id="volume" min="0" max="100">
+    </div>
+
+    <div class="campo">
+        <label for="cor">Tema de Cor</label>
+        <input type="color" name="cor_tema" id="cor" value="#3498db">
+    </div>
+
+</fieldset>
+
+
+<fieldset>
+    <legend>Preferências</legend>
+
+    <div class="campo">
+        <label>
+            <input type="checkbox" name="notificacoes"> Receber notificações
+        </label>
+    </div>
+
+    <div class="campo">
+        <label>
+            <input type="checkbox" name="email"> Receber por e-mail
+        </label>
+    </div>
+
+    <div class="campo">
+        <p>Escolha uma opção:</p>
+
+        <label>
+            <input type="radio" name="opcao" value="1"> Opção 1
+        </label>
+
+        <label>
+            <input type="radio" name="opcao" value="2"> Opção 2
+        </label>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend>Envio de Arquivos</legend>
+
+    <div class="campo">
+        <label for="arquivo">Enviar arquivo</label>
+        <input type="file" name="arquivo" id="arquivo">
+    </div>
+
+    <div class="campo">
+        <label for="site">URL</label>
+        <input type="url" name="site" id="site" placeholder="https://exemplo.com">
+    </div>
+
+    <div class="campo">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" rows="4"></textarea>
+    </div>
+</fieldset>
+       
+
+    </form>
+</body>
+
+</html>
