@@ -1,0 +1,269 @@
+/* ================================
+   RESET BÁSICO
+   ================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   ESTILOS GERAIS (base - mobile first)
+   ================================ */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================================
+   TOPO COM VÍDEO E OVERLAY ESCURO
+   ================================ */
+header.topo {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+header.topo video.video-topo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.6);
+}
+
+/* ================================
+   FOTO DE PERFIL
+   ================================ */
+.foto-perfil {
+  position: relative;
+  z-index: 2;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid white;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ================================
+   CONTEÚDO PRINCIPAL
+   ================================ */
+main {
+  max-width: 1000px;
+  margin: -50px auto 40px auto;
+  padding: 0 15px 40px 15px;
+}
+
+main h1 {
+  color: #a93ca6;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ================================
+   CAIXA "SOBRE MIM" CENTRALIZADA
+   ================================ */
+.caixa-sobre {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.caixa-sobre p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* ================================
+   CONTAINER DOS CARDS
+   ================================ */
+.container-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ================================
+   CADA CAIXA (CARD)
+   ================================ */
+.caixa {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caixa:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   TÍTULOS DENTRO DAS CAIXAS
+   ================================ */
+.caixa h3 {
+  color: #d63d9c;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   IMAGENS DAS CAIXAS
+   ================================ */
+.caixa img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   LISTAS
+   ================================ */
+ul {
+  list-style: none;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d63d9c;
+  font-weight: bold;
+}
+
+/* ================================
+   @MEDIA — TABLET (a partir de 600px)
+   ================================ */
+@media (min-width: 600px) {
+
+  header.topo {
+    height: 340px;
+  }
+
+  .foto-perfil {
+    width: 135px;
+    height: 135px;
+  }
+
+  main {
+    margin-top: -60px;
+    padding: 0 25px 40px 25px;
+  }
+
+  main h1 {
+    font-size: 2.4rem;
+  }
+
+  .caixa-sobre p {
+    font-size: 1.05rem;
+  }
+
+  .caixa {
+    width: 45%;
+  }
+
+  .caixa img {
+    height: 200px;
+  }
+}
+
+/* ================================
+   @MEDIA — DESKTOP (a partir de 900px)
+   ================================ */
+@media (min-width: 900px) {
+
+  header.topo {
+    height: 400px;
+  }
+
+  .foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-width: 5px;
+  }
+
+  main {
+    margin-top: -80px;
+    padding: 0 20px 40px 20px;
+  }
+
+  main h1 {
+    font-size: 2.8rem;
+  }
+
+  .caixa-sobre {
+    padding: 25px;
+  }
+
+  .caixa-sobre p {
+    font-size: 1.1rem;
+  }
+
+  .caixa {
+    width: 320px;
+    padding: 25px;
+  }
+
+  .caixa img {
+    height: 220px;
+  }
+
+  .caixa h3 {
+    font-size: 1.5rem;
+  }
+}
