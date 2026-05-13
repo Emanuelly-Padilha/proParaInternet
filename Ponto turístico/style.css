@@ -75,3 +75,43 @@ body {
   text-align: center;
   padding: 15px;
 }
+.btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.btn-topo:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.1);
+}
+.navbar {
+  transition: 0.3s;
+}
+
+.navbar-scrolled {
+  background-color: #0a0a0a !important;
+  padding: 5px 0;
+}
+
+/* Botão ativo no menu */
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important;
+}
+
+/* Animações suaves */
+.custom-card, .list-group-item {
+  transition: all 0.3s ease;
+}
